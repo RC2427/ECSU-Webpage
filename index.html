@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Basic Meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>ECSU Portal – Oracle EBS Component Search Utility</title>
-    <meta name="description" content="ECSU is a fast, secure, and modern Oracle EBS Component Search Utility for developers and administrators. Search and manage Oracle E-Business Suite components from a single interface with RBAC authentication.">
+    <meta name="description"
+        content="ECSU is a fast, secure, and modern Oracle EBS Component Search Utility for developers and administrators. Search and manage Oracle E-Business Suite components from a single interface with RBAC authentication.">
     <link rel="canonical" href="https://rc2427.github.io/ECSU-Webpage/">
     <meta name="robots" content="index, follow">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="ECSU Portal – Oracle EBS Component Search Utility">
-    <meta property="og:description" content="Search, manage, and view Oracle EBS components securely from one modern interface.">
+    <meta property="og:description"
+        content="Search, manage, and view Oracle EBS components securely from one modern interface.">
     <meta property="og:url" content="https://rc2427.github.io/ECSU-Webpage/">
     <meta property="og:site_name" content="ECSU Portal">
 
@@ -48,24 +51,54 @@
 
     <!-- Styles -->
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #e2e8f0; }
-        .gradient-text { background: linear-gradient(to right, #a78bfa, #4f46e5); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .feature-card { background-color: #1e293b; border: 1px solid #334155; transition: transform 0.3s ease, box-shadow 0.3s ease; }
-        .feature-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); }
-        .tech-logo img { filter: grayscale(100%) brightness(80%); transition: all 0.3s ease; }
-        .tech-logo:hover img { filter: grayscale(0%) brightness(100%); transform: scale(1.1); }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, #a78bfa, #4f46e5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .feature-card {
+            background-color: #1e293b;
+            border: 1px solid #334155;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .tech-logo img {
+            filter: grayscale(100%) brightness(80%);
+            transition: all 0.3s ease;
+        }
+
+        .tech-logo:hover img {
+            filter: grayscale(0%) brightness(100%);
+            transform: scale(1.1);
+        }
     </style>
 </head>
+
 <body class="antialiased">
 
     <!-- Header -->
     <header class="py-4 px-4 md:px-8 border-b border-slate-800">
         <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold gradient-text">ECSU – Oracle EBS Component Search Utility</h1>
-            <nav>
-                <a href="#features" class="mx-3 hover:underline">Features</a>
-                <a href="#tech" class="mx-3 hover:underline">Technology</a>
-                <a href="https://github.com/RC2427/ECSU" target="_blank" rel="noopener noreferrer" class="bg-slate-700 hover:bg-slate-600 text-white font-bold py-2 px-4 rounded-lg transition-colors">
+            <h1 class="text-2xl leading-tight font-bold gradient-text">
+                ECSU – Oracle EBS Component Search Utility
+            </h1>
+            <nav class="flex flex-wrap items-center gap-3 md:gap-6">
+                <a href="#features" class="hover:underline">Features</a>
+                <a href="#tech" class="hover:underline">Technology</a>
+                <a href="https://github.com/RC2427/ECSU" target="_blank" rel="noopener noreferrer"
+                    class="whitespace-nowrap bg-slate-700 hover:bg-slate-600 text-white font-bold py-2 px-4 rounded-lg transition-colors text-sm md:text-base">
                     View on GitHub
                 </a>
             </nav>
@@ -78,10 +111,12 @@
             Fast, Secure, Modern Search for <br> <span class="gradient-text">Oracle E-Business Suite</span>
         </h2>
         <p class="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-8">
-            ECSU (EBS Component Search Utility) enables developers and administrators to quickly search and view component details across multiple Oracle EBS instances from one central portal.
+            ECSU (EBS Component Search Utility) enables developers and administrators to quickly search and view
+            component details across multiple Oracle EBS instances from one central portal.
         </p>
         <div class="flex justify-center gap-4">
-            <a href="https://github.com/RC2427/ECSU" target="_blank" rel="noopener noreferrer" class="bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-3 px-6 rounded-lg text-lg transition-transform transform hover:scale-105">
+            <a href="https://github.com/RC2427/ECSU" target="_blank" rel="noopener noreferrer"
+                class="bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-3 px-6 rounded-lg text-lg transition-transform transform hover:scale-105">
                 Get Started on GitHub
             </a>
         </div>
@@ -95,12 +130,33 @@
                 <p class="text-slate-400 mt-2">Built for efficiency, scalability, and security.</p>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="feature-card p-8 rounded-xl"><h4 class="text-xl font-bold mb-2">Centralized Search</h4><p class="text-slate-400">Query multiple Oracle EBS instances through one unified search interface.</p></div>
-                <div class="feature-card p-8 rounded-xl"><h4 class="text-xl font-bold mb-2">Secure Authentication</h4><p class="text-slate-400">Integrated Keycloak-based role-based access control (RBAC) for granular permissions.</p></div>
-                <div class="feature-card p-8 rounded-xl"><h4 class="text-xl font-bold mb-2">Dynamic Suggestions</h4><p class="text-slate-400">Real-time intelligent suggestions help you find components faster.</p></div>
-                <div class="feature-card p-8 rounded-xl"><h4 class="text-xl font-bold mb-2">Role-Based Views</h4><p class="text-slate-400">Customized interfaces for developers and administrators.</p></div>
-                <div class="feature-card p-8 rounded-xl"><h4 class="text-xl font-bold mb-2">Admin Management</h4><p class="text-slate-400">Easily manage user access and configure instance connections.</p></div>
-                <div class="feature-card p-8 rounded-xl"><h4 class="text-xl font-bold mb-2">Modern Tech Stack</h4><p class="text-slate-400">Spring Boot backend with a responsive React frontend for optimal performance.</p></div>
+                <div class="feature-card p-8 rounded-xl">
+                    <h4 class="text-xl font-bold mb-2">Centralized Search</h4>
+                    <p class="text-slate-400">Query multiple Oracle EBS instances through one unified search interface.
+                    </p>
+                </div>
+                <div class="feature-card p-8 rounded-xl">
+                    <h4 class="text-xl font-bold mb-2">Secure Authentication</h4>
+                    <p class="text-slate-400">Integrated Keycloak-based role-based access control (RBAC) for granular
+                        permissions.</p>
+                </div>
+                <div class="feature-card p-8 rounded-xl">
+                    <h4 class="text-xl font-bold mb-2">Dynamic Suggestions</h4>
+                    <p class="text-slate-400">Real-time intelligent suggestions help you find components faster.</p>
+                </div>
+                <div class="feature-card p-8 rounded-xl">
+                    <h4 class="text-xl font-bold mb-2">Role-Based Views</h4>
+                    <p class="text-slate-400">Customized interfaces for developers and administrators.</p>
+                </div>
+                <div class="feature-card p-8 rounded-xl">
+                    <h4 class="text-xl font-bold mb-2">Admin Management</h4>
+                    <p class="text-slate-400">Easily manage user access and configure instance connections.</p>
+                </div>
+                <div class="feature-card p-8 rounded-xl">
+                    <h4 class="text-xl font-bold mb-2">Modern Tech Stack</h4>
+                    <p class="text-slate-400">Spring Boot backend with a responsive React frontend for optimal
+                        performance.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -110,20 +166,28 @@
         <div class="container mx-auto px-4 text-center">
             <h3 class="text-3xl md:text-4xl font-bold mb-12">Powered By</h3>
             <div class="flex flex-wrap justify-center items-center gap-x-16 gap-y-10">
-                <a href="https://spring.io/projects/spring-boot" target="_blank" class="tech-logo" title="Java Spring Boot">
-                    <img class="h-12" src="https://upload.wikimedia.org/wikipedia/commons/7/79/Spring_Boot.svg" alt="Spring Boot Logo">
+                <a href="https://spring.io/projects/spring-boot" target="_blank" class="tech-logo"
+                    title="Java Spring Boot">
+                    <img class="h-12" src="https://upload.wikimedia.org/wikipedia/commons/7/79/Spring_Boot.svg"
+                        alt="Spring Boot Logo">
                 </a>
                 <a href="https://react.dev" target="_blank" class="tech-logo" title="React">
-                    <img class="h-14" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="React Logo">
+                    <img class="h-14"
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+                        alt="React Logo">
                 </a>
                 <a href="https://www.oracle.com/" target="_blank" class="tech-logo" title="Oracle">
-                    <img class="h-5" src="https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg" alt="Oracle Logo">
+                    <img class="h-5" src="https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg"
+                        alt="Oracle Logo">
                 </a>
                 <a href="https://mui.com/" target="_blank" class="tech-logo" title="Material-UI">
-                    <img class="h-12" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/materialui/materialui-original.svg" alt="Material-UI Logo">
+                    <img class="h-12"
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/materialui/materialui-original.svg"
+                        alt="Material-UI Logo">
                 </a>
                 <a href="https://www.keycloak.org/" target="_blank" class="tech-logo" title="Keycloak">
-                    <img class="h-14" src="https://upload.wikimedia.org/wikipedia/commons/2/29/Keycloak_Logo.png" alt="Keycloak Logo">
+                    <img class="h-14" src="https://upload.wikimedia.org/wikipedia/commons/2/29/Keycloak_Logo.png"
+                        alt="Keycloak Logo">
                 </a>
             </div>
         </div>
@@ -136,4 +200,5 @@
         </div>
     </footer>
 </body>
+
 </html>
